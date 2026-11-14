@@ -302,3 +302,8 @@ main > *:not(.doors):not(.hero-cta) { max-width: 780px; }
 main:has(.host) > * { max-width: 900px; }
 .host, .share-box { margin-inline: 0 auto; }
 main > .doors, main > .callout.send, main > .byline { max-width: none; }
+
+/* Mobile menu must open above page content */
+.bar { position: relative; z-index: 30; }
+@media (max-width: 760px) { .bar { position: relative; } }
+.nav-mob nav { z-index: 40; }
