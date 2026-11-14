@@ -289,3 +289,16 @@ td .src { font-size: 13px; }
   .share-box { max-width: 900px; }
   .three h2 { font-size: 24px; }
 }
+
+/* Menu sits next to the site name; card links line up at the bottom */
+.bar-in { justify-content: flex-start; gap: 36px; }
+.door { display: flex; flex-direction: column; gap: 8px; height: 100%; }
+.door .go { margin-top: auto; padding-top: 8px; }
+.doors { align-items: stretch; }
+
+/* Content starts at the same right edge as the header and the guide menu */
+main, main.wide, main:has(.host) { max-width: 1100px; }
+main > *:not(.doors):not(.hero-cta) { max-width: 780px; }
+main:has(.host) > * { max-width: 900px; }
+.host, .share-box { margin-inline: 0 auto; }
+main > .doors, main > .callout.send, main > .byline { max-width: none; }
